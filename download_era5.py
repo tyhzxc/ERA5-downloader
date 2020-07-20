@@ -29,7 +29,7 @@ path_data = path_root / 'data'
 #%%
 for ind in df_request.index:
   for date in range(22):
-        print(i)
+    
     lat_x, lon_x = df_request.loc[ind, ['latitude', 'longitude']]
     grid = [0.125, 0.125]
 
@@ -42,7 +42,7 @@ for ind in df_request.index:
         path_x.mkdir(parents=True)
     os.chdir(path_x)
 
-        start_x, end_x = df_request.loc[date+1, ['start', 'end']]
+    start_x, end_x = df_request.loc[date+1, ['start', 'end']]
 
     # note: `scale` is currently not used.
     scale_x = df_request.loc[ind, 'scale']
