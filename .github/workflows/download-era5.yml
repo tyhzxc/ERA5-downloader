@@ -3,7 +3,7 @@ name: Download and Save ERA5
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '0 0,3,6,9,12,15,18,21 * * *'
+#    - cron:  '0 0,3,6,9,12,15,18,21 * * *'
   # File paths to consider in the event. Optional; defaults to all
   push:
     branches:    # Array of patterns that match refs/heads
@@ -13,10 +13,10 @@ on:
   #     - '!refs/pull/*'
   #   tags:        # Array of patterns that match refs/tags.
   #     - v1         # Push events to v1 tag
-    paths:       # Push events containing matching files
-      - 'site_request.csv'
-      - 'download_era5.py'
-      - '.github/workflows/download-era5.yml'
+#    paths:       # Push events containing matching files
+#      - 'site_request.csv'
+#      - 'download_era5.py'
+#      - '.github/workflows/download-era5.yml'
 
 jobs:
   download:
