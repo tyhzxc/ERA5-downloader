@@ -42,7 +42,7 @@ for ind in df_request.index:
         path_x.mkdir(parents=True)
     os.chdir(path_x)
 
-    start_x, end_x = df_request.loc[date+1, ['start', 'end']]
+    start_x, end_x = df_request.loc[date, ['start', 'end']]
 
     # note: `scale` is currently not used.
     scale_x = df_request.loc[ind, 'scale']
