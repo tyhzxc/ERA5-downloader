@@ -59,8 +59,8 @@ for date in range(22):
             logger_supy.info(f'downloading started!')
             # download requested files then exit otherwise GH would timeout for many requests
             dict_era5 = sp.util.download_era5(lat_c, lon_c, start_x, end_x)
-            break
-            break
+#            break
+#            break
         # list_fn_forcing=sp.util.gen_forcing_era5(lat_c,lon_c,start_x,end_x)
     
         os.chdir(path_root)
